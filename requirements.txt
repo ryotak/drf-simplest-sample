@@ -1,0 +1,3 @@
+# 必要なパッケージを記述
+django
+djangorestframework

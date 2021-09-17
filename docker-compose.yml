@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    # Dockerイメージを自作している場合はbuildコマンドを記述
+    build:
+      # docker-compose.ymlからDockerfileへの相対位置を記述
+      context: .
+    ports:
+      # ホスト側:コンテナ側
+      - "8020:8000"
+    # volume(=データを永続化できる場所)コンテナ本体にマウントして使う
+    volumes:
+      # ホスト側:コンテナ側
+      - "./drf-work:/drf-work"
+    # docker-compose up時に実行されるコマンド
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
