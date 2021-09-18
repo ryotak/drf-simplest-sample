@@ -7,6 +7,5 @@
 docker-compose up
 ```
 
-2. ブラウザで下記urlへアクセス
+2. ブラウザで `http://localhost:8020/` へアクセス
 
-http://localhost:8020/
