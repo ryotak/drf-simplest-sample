@@ -1,3 +1,4 @@
 # 必要なパッケージを記述
 django
 djangorestframework
+drf-spectacular

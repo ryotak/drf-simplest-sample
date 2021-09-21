@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     # アプリケーション追加
     'apiv1.apps.Apiv1Config',
     'shop.apps.ShopConfig',
+
+    #
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -148,4 +151,5 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',  # DRF Cookie
     ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',    # Output Schema
 }
