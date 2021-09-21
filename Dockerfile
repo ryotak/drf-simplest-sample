@@ -7,7 +7,7 @@ FROM python:3.7-alpine
 LABEL architecture="Rkunisato"
 
 # リアルタイムでログを見れるように環境変数を指定
-ENV PYTHONUNBUFFERD 1
+# ENV PYTHONUNBUFFERD 1
 
 # ローカルのrequirements.txtをコンテナにコピー
 COPY ./requirements.txt /requirements.txt
